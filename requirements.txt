@@ -21,3 +21,5 @@ wheel
 tk
 Tk
 Tcl
+gunicorn
+Flask-JSGlue
