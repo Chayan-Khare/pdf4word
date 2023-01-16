@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <style>
+        div {
+          margin-bottom: 40px;
+          margin-top: 100px;
+        }
+        label {
+          display: inline-block;
+          width: 150px;
+          
+          
+          text-align: right;
+        }
+        .site-footer {
+  background-color: rgb(0, 255, 242);
+	text-align: center;
+	margin: 1px 0;
+	padding: 1px 0;
+   
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+/*Social Media Icons*/
+.social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon,
+.youtube-icon,
+.foursquare-icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60); 
+  border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover,
+.youtube-icon:hover,
+.foursquare-icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.footer-nav p {
+	text-align: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  bottom: 93%;
+  width: 100%;
+  background-color: rgb(0, 255, 242);
+  color: white;
+  text-align: center;
+}
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+      </style>
+    
+    <title>Docx</title>
+</head>
+<body style="background-color:lightcyan">
+    <h1 style="color: rgb(67, 67, 116); text-align: center;" class="header"><a href="/">PDF to Word</h1></a>
+<center>
+    <div><h1>Your file is ready Click Download</h1>
+    <form action="/docx" method="POST">
+        <input value={{variable}} id="3" name="filename" type="hidden">
+        <button class="btn"><i class="fa fa-download"></i>Download</button>
+    </form>
+</div>
+</center>
+<h5>PDF to DOC Conversion</h5>
+<p align="justify">PDF to DOC conversion is the process of converting a PDF file, which is a type of file format commonly used for documents that are intended to be read-only and cannot be easily edited, into a DOC file, which is a file format used by Microsoft Word and other word processing programs.
+    <br> This conversion allows the user to edit and make changes to the original document, such as adding text or images, changing formatting, and so on. 
+    <br>This can be achieved by using a software program specifically designed for this purpose, such as Adobe Acrobat Pro or online conversion tools.</p>
+<h5>How to convert PDF to DOC?</h5>
+<p align="justify">To begin converting your PDFs to DOCs, you will first need to upload the files you wish to convert. Click the "UPLOAD FILES" button, and select the PDF files you wish to convert. You can convert up to 20 files in a single session.
+
+    After uploading the files, they will appear in the queue for downloading. You can download each file individually by clicking the "DOWNLOAD" button next to each file, or you can download all the files together by clicking the "DOWNLOAD ALL" button, which will create a ZIP file with all the converted files.</p>
+<!-- <div class="footer" style="color: rgb(67, 67, 116); text-align: center;" >
+    <h4> © 2023 Smallpdf AG — Made By Chayan Khare.</h4>
+  </div> -->
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="social-wrapper">
+      <ul>
+        <li>
+          <a href="https://mobile.twitter.com/ChayanKhare" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/chayankhare/" target="_blank">
+            <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/chayan-khare-098483215/" target="_blank">
+            <img src="https://iconarchive.com/download/i82926/limav/flat-gradient-social/Linkedin.ico" alt="Linkedin Logo" class="linkedin-icon"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/chayan.khare.1" target="_blank">
+            <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+        </li>
+        <!-- <li>
+          <a href="#" target="_blank">
+            <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+        </li> -->
+        <!-- <li>
+          <a href="#" target="_blank">
+            <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+        </li> -->
+        <!-- <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+        </li> -->
+      </ul>
+    </div>
+  
+    <nav class="footer-nav" role="navigation">
+      <p>Copyright &copy; 2023-
+        <?php echo date("Y"); ?> Chayan Khare. All rights reserved.</p>
+    </nav>
+  </footer>
+
+</body>
+</html>
